@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+
+    "target": "es5",
+    "jsx": "react-jsx",     
+    "module": "commonjs",
+    "lib": ["dom", "dom.iterable", "esnext"],  
+    "moduleResolution": "node",
+    "declaration": true,                             
+    "declarationMap": true,                          
+    "sourceMap": true,                               
+    "outDir": "lib",                                 
+    "esModuleInterop": true,                          
+    "strict": true,                                  
+    "skipLibCheck": true,                            
+    "rootDirs": ["src", "tests"],
+    "baseUrl": ".",
+    "allowJs": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true,
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "lib", "examples"]
+}
