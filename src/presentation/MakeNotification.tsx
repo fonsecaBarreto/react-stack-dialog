@@ -36,7 +36,7 @@ export function MakeNotification(onAction: OnActionFunction, messages: string[] 
         case NotificationType.CONFIRMATION: 
             icon= <BsQuestionOctagon></BsQuestionOctagon>;
             messages= messages || ["Confirme!"],
-            buttons= [ "Continuar", "Cancelar" ];
+            buttons= [ "Sim", "Não" ];
         break;
     }
 
