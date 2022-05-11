@@ -1,9 +1,6 @@
 import React, { ReactNode } from 'react'
 import './style.css'
 import { MakeDialogConfig, OnActionFunction } from '../Dialog'
-import { FiAlertCircle, FiUserCheck } from 'react-icons/fi'
-import { GrStatusGood } from 'react-icons/gr'
-import { BsQuestionOctagon } from 'react-icons/bs'
 
 export enum NotificationType {
     SUCCESS,
@@ -19,22 +16,22 @@ export function MakeNotification(onAction: OnActionFunction, messages: string[] 
 
     switch(type) {
         case NotificationType.SUCCESS: 
-            icon= <GrStatusGood>,</GrStatusGood>;
+            icon= null;
             messages = messages || ["Operação Relizada com sucesso"];
             buttons= ["Ok"];
         break;
         case NotificationType.FAILURE: 
-            icon= <FiAlertCircle></FiAlertCircle>,
+            icon= null;
             messages = messages || ["Não foi possivel realizar essa ação."]
             buttons= ["Ok"];
         break;
         case NotificationType.INFO: 
-            icon= <FiUserCheck></FiUserCheck>;
+            icon= null;
             messages= messages || [""],
             buttons= [];
         break;
         case NotificationType.CONFIRMATION: 
-            icon= <BsQuestionOctagon></BsQuestionOctagon>;
+            icon= null;
             messages= messages || ["Confirme!"],
             buttons= [ "Sim", "Não" ];
         break;

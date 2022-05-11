@@ -1,6 +1,5 @@
 import React, { ReactNode } from 'react'
 import './style.css'
-import { FaTimes } from 'react-icons/fa'
 import { v4 } from 'uuid'
 export type OnActionFunction = (n:any)=>any
 
@@ -36,7 +35,7 @@ export function Dialog({ config, offset=0, show= true }: DialogProps): JSX.Eleme
                             { icon && <span> {icon}</span>} 
                             { title && <span>{title}</span>}
                             <button onClick={() => onAction(-1)} className="adc-close"> 
-                                <FaTimes> </FaTimes>
+                                &#x2715;
                             </button>
                         </div>
                         <div className={`fck-dialog-body ${loading ?' div-loading' : ''}`}>
